@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    nginx:
+        container_name: nginx
+        image: nginx
+        volumes:
+            - /opt/docker/containers/nginx/sites-enabled:/etc/nginx/sites-enabled/
+        restart: always
