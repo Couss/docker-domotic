@@ -2,7 +2,7 @@ version: "3"
 
 services:
     MQTT:
-        container_name: homeassistant
+        container_name: mqtt
         image: eclipse-mosquitto
         volumes:
             - /opt/mosquitto/config:/mosquitto/config
