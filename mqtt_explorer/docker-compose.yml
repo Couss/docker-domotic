@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    MQTT_explorer:
+        container_name: mqtt-explorer
+        image: smeagolworms4/mqtt-explorer
+        volumes:
+            - $DOCKER_FOLDER/mqtt-explorer/config:/mqtt-explorer/config
+        ports:
+            - "4000:4000"
+        environment:
+            - TZ=$TZ
