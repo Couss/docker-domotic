@@ -8,3 +8,5 @@ services:
         volumes:
             - /opt/docker/vscode:/home/coder/.local/share/code-server
             - /opt/docker/containers/homeassistant:/home/coder/project
+        ports:
+            - "8080:8080"
