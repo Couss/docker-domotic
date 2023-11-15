@@ -3,10 +3,11 @@ version: "3"
 services:
     vscode:
         container_name: vscode
-        image: codercom/code-server:latest
+        image: linuxserver/code-server
+        restart: unless-stopped
         volumes:
-            - /opt/docker/containers/vscode:/home/coder/.local/share/code-server
-            - /opt/docker/containers/homeassistant:/home/coder/project
+            - /opt/docker/containers/vscode:/config
+            - /opt/docker/containers/homeassistant:/config/workspace
         ports:
             - "8443:8443"
         environment:
