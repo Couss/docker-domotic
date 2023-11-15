@@ -6,3 +6,4 @@ Docker compose configurations files for domotic
  - [Mosquitto](https://github.com/Couss/docker-domotic/blob/main/Mosquitto/docker-compose.yml)
  - [Nginx](https://github.com/Couss/docker-domotic/blob/main/nginx/docker-compose.yml)
  - [Portainer](https://github.com/Couss/docker-domotic/blob/main/portainer/docker-compose.yml)
+ - [VSCode](https://github.com/Couss/docker-domotic/blob/main/VSCode/docker-compose.yml)

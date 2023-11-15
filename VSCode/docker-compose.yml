@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    vscode:
+        container_name: vscode
+        image: codercom/code-server:latest
+        user: 1000:1000
+        volumes:
+            - /opt/docker/vscode:/home/coder/.local/share/code-server
+            - /opt/docker/containers/homeassistant:/home/coder/project
