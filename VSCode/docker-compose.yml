@@ -5,7 +5,7 @@ services:
         container_name: vscode
         image: codercom/code-server:latest
         volumes:
-            - /opt/docker/vscode:/home/coder/.local/share/code-server
+            - /opt/docker/containers/vscode:/home/coder/.local/share/code-server
             - /opt/docker/containers/homeassistant:/home/coder/project
         ports:
             - "8443:8443"
