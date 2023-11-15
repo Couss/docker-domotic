@@ -6,8 +6,8 @@ services:
         image: linuxserver/code-server
         restart: unless-stopped
         volumes:
-            - /opt/docker/containers/vscode:/config
-            - /opt/docker/containers/homeassistant:/config/workspace
+            - $DOCKER_FOLDER/vscode:/config
+            - $DOCKER_FOLDER/homeassistant:/config/workspace
         ports:
             - "8443:8443"
         environment:

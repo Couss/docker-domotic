@@ -5,7 +5,9 @@ services:
         container_name: nginx
         image: nginx
         volumes:
-            - /opt/docker/containers/nginx/sites-enabled:/etc/nginx/conf.d
+            - $DOCKER_FOLDER/nginx/sites-enabled:/etc/nginx/conf.d
         ports:
             - "80:80"
         restart: always
+        environment:
+            - TZ=$TZ
