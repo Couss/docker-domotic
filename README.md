@@ -8,3 +8,4 @@ Docker compose configurations files for domotic
  - [Nginx](https://github.com/Couss/docker-domotic/blob/main/nginx/docker-compose.yml)
  - [Portainer](https://github.com/Couss/docker-domotic/blob/main/portainer/docker-compose.yml)
  - [VSCode](https://github.com/Couss/docker-domotic/blob/main/VSCode/docker-compose.yml)
+ - [zigbee2mqtt](https://github.com/Couss/docker-domotic/blob/main/zigbee2mqtt/docker-compose.yml)
