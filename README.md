@@ -2,6 +2,7 @@
 Docker compose configurations files for domotic
 
 ## Fichiers docker-compose
+ - [Duplicati](https://github.com/Couss/docker-domotic/blob/main/duplicati/docker-compose.yml)
  - [Home Assistant](https://github.com/Couss/docker-domotic/blob/main/HomeAssistant/docker-compose.yml)
  - [Mosquitto](https://github.com/Couss/docker-domotic/blob/main/Mosquitto/docker-compose.yml)
  - [MQTT Explorer](https://github.com/Couss/docker-domotic/blob/main/mqtt_explorer/docker-compose.yml)

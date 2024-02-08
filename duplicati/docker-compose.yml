@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+    duplicati:
+        container_name: duplicati
+        image: linuxserver/duplicati
+        volumes:
+            - $DOCKER_FOLDER/duplicati/config:/config
+            - $DOCKER_FOLDER/source:/source
+        restart: unless-stopped
+        network_mode: host
+        ports:
+        - 8200:8200
+        environment:
+            - PUID=$PUID
+            - PGID=$PGID
+            - TZ=$TZ
