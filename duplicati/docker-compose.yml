@@ -6,7 +6,7 @@ services:
         image: linuxserver/duplicati
         volumes:
             - $DOCKER_FOLDER/duplicati/config:/config
-            - $DOCKER_FOLDER/source:/source
+            - $DOCKER_FOLDER:/source
         restart: unless-stopped
         network_mode: host
         ports:
