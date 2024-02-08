@@ -10,7 +10,7 @@ services:
         restart: unless-stopped
         network_mode: host
         ports:
-        - 8200:8200
+            - 8200:8200
         environment:
             - PUID=$PUID
             - PGID=$PGID
